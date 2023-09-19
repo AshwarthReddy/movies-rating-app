@@ -9,7 +9,7 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.unit.dp
-import com.anr.movies_rating_app.compose.TVShowInfo
+import com.anr.movies_rating_app.compose.TVShowInfoActivity
 import com.anr.movies_rating_app.compose.TvShowListLItem
 import com.anr.movies_rating_app.data.TvShowList
 import com.anr.movies_rating_app.model.TvShow
@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             DisplayTvShows {
-               startActivity(TVShowInfo.intent(this, it))
+               startActivity(TVShowInfoActivity.intent(this, it))
             }
         }
     }

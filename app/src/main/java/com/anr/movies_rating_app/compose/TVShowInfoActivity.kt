@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -28,12 +27,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.anr.movies_rating_app.model.TvShow
 
-class TVShowInfo : ComponentActivity() {
+class TVShowInfoActivity : ComponentActivity() {
 
     companion object{
         private const val TvShowId = "tvshowid"
         fun intent(context: Context, tvShow: TvShow)=
-            Intent(context,TVShowInfo::class.java).apply {
+            Intent(context,TVShowInfoActivity::class.java).apply {
                 putExtra(TvShowId,tvShow)
             }
     }
@@ -76,7 +75,7 @@ fun ViewMoreInfo(tvShow: TvShow) {
             Spacer(modifier = Modifier.height(16.dp))
             Text(
                 text = tvShow.name,
-                style = MaterialTheme.typography.bodyMedium
+                style = MaterialTheme.typography.headlineLarge
             )
             Spacer(modifier = Modifier.height(16.dp))
             Text(

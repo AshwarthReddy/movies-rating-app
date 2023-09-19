@@ -13,13 +13,10 @@
         android:theme="@style/Theme.Moviesratingapp"
         tools:targetApi="31">
         <activity
-            android:name=".compose.TVShowInfo"
+            android:name=".compose.TVShowInfoActivity"
             android:exported="false"
             android:label="@string/title_activity_tvshow_info"
             android:theme="@style/Theme.Moviesratingapp" />
-        <activity
-            android:name=".TVShowInfo"
-            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
