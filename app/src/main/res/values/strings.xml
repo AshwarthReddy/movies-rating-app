@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">movies-rating-app</string>
+    <string name="title_activity_tvshow_info">TVShowInfo</string>
+</resources>
